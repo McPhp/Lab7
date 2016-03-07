@@ -16,8 +16,8 @@
 				<end>12:20 PM</end>
 			</time>
 			<instructor>
-				<firstname>Brenda</firstname>
-				<lastname>Fine</lastname>
+				<first>Brenda</first>
+				<last>Fine</last>
 			</instructor>
 			<room>
 				<building>SW5</building>
@@ -25,39 +25,47 @@
 			</room>
 			<type type_of_period="Lec"/>
 		</period>
-		
+
 		<period>
-			<course>COMP4711 </course>
-			<course_code> 1231241 </course_code>
+			<course>
+				<name>COMP</name>
+				<number>4711</number>
+				<id>123456</id>
+			</course>
 			<time>
-				<start>12:30 PM</start>
+				<start>12:30 AM</start>
 				<end>2:20 PM</end>
 			</time>
 			<instructor>
-				<firstname>JIM</firstname>
-				<lastname>PARRY</lastname>
+				<first>Jim</first>
+				<last>Parry</last>
 			</instructor>
 			<room>
 				<building>SE12</building>
 				<number>320</number>
 			</room>
+			<type type_of_period="Lab"/>
 		</period>
                 
-                <period>
-			<course>COMP4711</course>
-			<course_code> 1231241 </course_code>
+		<period>
+			<course>
+				<name>COMP</name>
+				<number>4711</number>
+				<id>123456</id>
+			</course>
 			<time>
 				<start>2:30 PM</start>
 				<end>3:20 PM</end>
 			</time>
 			<instructor>
-				<firstname>Jim</firstname>
-				<lastname>Parry</lastname>
+				<first>Jim</first>
+				<last>Parry</last>
 			</instructor>
 			<room>
 				<building>SW5</building>
 				<number>1840</number>
 			</room>
+			<type type_of_period="Lec"/>
 		</period>
 	</day>	
 </Schedule>
