@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8">
+
+<!-- 
+	Schedule for Winter 2016 term 4 for CST
+!-->
+
+<!ELEMENT schedule (program, year, term, set, days, period, course)>
+
+<!-- 
+	Schedule is identified by these data
+!-->
+<!ELEMENT program (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT term (#PCDATA)>
+<!ELEMENT set (#PCDATA)>
+
+
+
+
+
+
