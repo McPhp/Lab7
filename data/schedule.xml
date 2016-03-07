@@ -5,9 +5,12 @@
 	<set>G</set>
 	
 	<day day_of_the_week = "Tuesday">
-            <period>
-			<course>COMP4560</course>
-			<course_code> 345252 </course_code>
+		<period>
+			<course>
+				<name>COMP</name>
+				<number>3560</number>
+				<id>345252</id>
+			</course>
 			<time>
 				<start>11:30 AM</start>
 				<end>12:20 PM</end>
@@ -20,6 +23,7 @@
 				<building>SW5</building>
 				<number>1850</number>
 			</room>
+			<type type_of_period="Lec"/>
 		</period>
 		
 		<period>

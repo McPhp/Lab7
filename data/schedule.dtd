@@ -4,7 +4,7 @@
 	Schedule for Winter 2016 term 4 for CST
 !-->
 
-<!ELEMENT schedule (program, year, term, set, period+)>
+<!ELEMENT schedule (program, year, term, set, day+)>
 
 <!-- 
 	Schedule is identified by these data
@@ -15,27 +15,40 @@
 <!ELEMENT set (#PCDATA)>
 
 <!--
+	day constraints
+-->
+<!ELEMENT day (#PCDATA|period)*>
+<!ATLIST day
+	day_of_the_week (Monday|Tuesday|Wednesday|Thursday|Friday) #REQUIRED
+>
+
+<!--
 	Period constraints
 !-->
-<!ELEMENT period (course, day, time, instructor, room, type)>
+<!ELEMENT period (course, time, instructor, room, type)>
 
 <!--
 	course constraints
 -->
-<!ELEMENT course (#PCDATA)>
+<!ELEMENT course (name, number, id)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT number(#PCDATA)>
+<!ELEMENT id(#PCDATA)>
 
-<!--
-	day constraints
--->
-<!ELEMENT day (#PCDATA)>
-<!ATLIST day
-	day_of_the_week (Monday|Tuesday|Wednesday|Thursday|Friday) #REQUIRED
->
-		
 
 <!--
 	time constraints
 -->
+<!ELEMENT time(start, end)>
+<!ELEMENT start(#PCDATA)>
+<!ELEMENT end(#PCDATA)>
+
+<!--
+	Instructor constraints
+-->
+<!ELEMENT instructor(first, last)>
+<!ELEMENT first(#PCDATA)>
+<!ELEMENT last(#PCDATA)>
 
 <--
         type constraints
