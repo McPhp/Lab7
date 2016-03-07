@@ -5,7 +5,22 @@
 	<set>G</set>
 	
 	<day day_of_the_week = "Tuesday">
-		
+            <period>
+			<course>COMP4560</course>
+			<course_code> 345252 </course_code>
+			<time>
+				<start>11:30 AM</start>
+				<end>12:20 PM</end>
+			</time>
+			<instructor>
+				<firstname>Brenda</firstname>
+				<lastname>Fine</lastname>
+			</instructor>
+			<room>
+				<building>SW5</building>
+				<number>1850</number>
+			</room>
+		</period>
 		
 		<period>
 			<course>COMP4711 </course>
@@ -23,7 +38,22 @@
 				<number>320</number>
 			</room>
 		</period>
-	</day>
-				
-	
+                
+                <period>
+			<course>COMP4711</course>
+			<course_code> 1231241 </course_code>
+			<time>
+				<start>2:30 PM</start>
+				<end>3:20 PM</end>
+			</time>
+			<instructor>
+				<firstname>Jim</firstname>
+				<lastname>Parry</lastname>
+			</instructor>
+			<room>
+				<building>SW5</building>
+				<number>1840</number>
+			</room>
+		</period>
+	</day>	
 </Schedule>
