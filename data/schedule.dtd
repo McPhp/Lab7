@@ -17,7 +17,7 @@
 <!--
 	Period constraints
 !-->
-<!ELEMENT period (course, day, time, instructor, room)>
+<!ELEMENT period (course, day, time, instructor, room, type)>
 
 <!--
 	course constraints
@@ -37,5 +37,12 @@
 	time constraints
 -->
 
+<--
+        type constraints
+--!>
 
+<!ELEMENT type (#PCDATA)>
+<!ATLIST type
+	type_of_period (Lab|Lec) #REQUIRED
+>
 
