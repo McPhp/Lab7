@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="UTF-8">
 
 <!-- 
 	Schedule for Winter 2016 term 4 for CST
-!-->
+-->
 
 <!ELEMENT schedule (program, year, term, set, day+)>
 
 <!-- 
 	Schedule is identified by these data
-!-->
+-->
 <!ELEMENT program (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
 <!ELEMENT term (#PCDATA)>
@@ -18,44 +17,51 @@
 	day constraints
 -->
 <!ELEMENT day (#PCDATA|period)*>
-<!ATLIST day
+<!ATTLIST day
 	day_of_the_week (Monday|Tuesday|Wednesday|Thursday|Friday) #REQUIRED
 >
 
 <!--
 	Period constraints
-!-->
+-->
 <!ELEMENT period (course, time, instructor, room, type)>
 
 <!--
 	course constraints
 -->
 <!ELEMENT course (name, number, id)>
-<!ELEMENT name(#PCDATA)>
-<!ELEMENT number(#PCDATA)>
-<!ELEMENT id(#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
 
 
 <!--
 	time constraints
 -->
-<!ELEMENT time(start, end)>
-<!ELEMENT start(#PCDATA)>
-<!ELEMENT end(#PCDATA)>
+<!ELEMENT time (start, end)>
+<!ELEMENT start (#PCDATA)>
+<!ELEMENT end (#PCDATA)>
 
 <!--
 	Instructor constraints
 -->
-<!ELEMENT instructor(first, last)>
-<!ELEMENT first(#PCDATA)>
-<!ELEMENT last(#PCDATA)>
+<!ELEMENT instructor (first, last)>
+<!ELEMENT first (#PCDATA)>
+<!ELEMENT last (#PCDATA)>
 
-<--
+<!--
+	room constraints
+-->
+<!ELEMENT room (building, room_number)>
+<!ELEMENT building (#PCDATA)>
+<!ELEMENT room_number (#PCDATA)>
+
+<!--
         type constraints
---!>
+-->
 
 <!ELEMENT type (#PCDATA)>
-<!ATLIST type
+<!ATTLIST type
 	type_of_period (Lab|Lec) #REQUIRED
 >
 

@@ -1,4 +1,7 @@
-<Schedule>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE schedule SYSTEM "schedule.dtd">
+
+<schedule>
 	<program>CST</program>
 	<year>2016</year>
 	<term>4</term>
@@ -21,7 +24,7 @@
 			</instructor>
 			<room>
 				<building>SW5</building>
-				<number>1850</number>
+				<room_number>1850</room_number>
 			</room>
 			<type type_of_period="Lec"/>
 		</period>
@@ -42,7 +45,7 @@
 			</instructor>
 			<room>
 				<building>SE12</building>
-				<number>320</number>
+				<room_number>320</room_number>
 			</room>
 			<type type_of_period="Lab"/>
 		</period>
@@ -63,9 +66,9 @@
 			</instructor>
 			<room>
 				<building>SW5</building>
-				<number>1840</number>
+				<room_number>1840</room_number>
 			</room>
 			<type type_of_period="Lec"/>
 		</period>
 	</day>	
-</Schedule>
+</schedule>
