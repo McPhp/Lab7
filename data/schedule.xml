@@ -1,0 +1,29 @@
+<Schedule>
+	<program>CST</program>
+	<year>2016</year>
+	<term>4</term>
+	<set>G</set>
+	
+	<day day_of_the_week = "Tuesday">
+		
+		
+		<period>
+			<course>COMP4711 </course>
+			<course_code> 1231241 </course_code>
+			<time>
+				<start>12:30 PM</start>
+				<end>2:20 PM</end>
+			</time>
+			<instructor>
+				<firstname>JIM</firstname>
+				<lastname>PARRY</lastname>
+			</instructor>
+			<room>
+				<building>SE12</building>
+				<number>320</number>
+			</room>
+		</period>
+	</day>
+				
+	
+</Schedule>
