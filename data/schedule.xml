@@ -6,69 +6,73 @@
 	<year>2016</year>
 	<term>4</term>
 	<set>G</set>
-	
-	<day day_of_the_week = "Tuesday">
-		<period>
-			<course>
-				<name>COMP</name>
-				<number>3560</number>
-				<id>345252</id>
-			</course>
-			<time>
-				<start>11:30 AM</start>
-				<end>12:20 PM</end>
-			</time>
-			<instructor>
-				<first>Brenda</first>
-				<last>Fine</last>
-			</instructor>
-			<room>
-				<building>SW5</building>
-				<room_number>1850</room_number>
-			</room>
-			<type type_of_period="Lec"/>
-		</period>
 
-		<period>
-			<course>
-				<name>COMP</name>
-				<number>4711</number>
-				<id>123456</id>
-			</course>
-			<time>
-				<start>12:30 AM</start>
-				<end>2:20 PM</end>
-			</time>
-			<instructor>
-				<first>Jim</first>
-				<last>Parry</last>
-			</instructor>
-			<room>
-				<building>SE12</building>
-				<room_number>320</room_number>
-			</room>
-			<type type_of_period="Lab"/>
-		</period>
-                
-		<period>
-			<course>
-				<name>COMP</name>
-				<number>4711</number>
-				<id>123456</id>
-			</course>
-			<time>
-				<start>2:30 PM</start>
-				<end>3:20 PM</end>
-			</time>
-			<instructor>
-				<first>Jim</first>
-				<last>Parry</last>
-			</instructor>
-			<room>
+	<!-- Courses -->
+	<courses>
+		<course name="COMP" number="4711">
+			<booking type="Lecture" start="8:30am" end="9:20am">
 				<building>SW5</building>
-				<room_number>1840</room_number>
-			</room>
-			<type type_of_period="Lec"/>
-		</period>
-	</day>	
+				<room>1850</room>
+				<instructor>
+					<firstname>Jim</firstname>
+					<lastname>Parry</lastname>
+				</instructor>
+			</booking>
+			
+			<booking type="Lab" start="12:30pm" end="2:20pm">
+				<building>SE12</building>
+				<room>320</room>
+				<instructor>
+					<firstname>Jim</firstname>
+					<lastname>Parry</lastname>
+				</instructor>
+			</booking>
+		</course>
+	</courses>
+
+	<!-- Daysoftheweek -->
+	<days>
+		<day day_of_the_week = "Monday">	
+			<booking type="Lecture" start="8:30am" end="9:20am" course="COMP4711">
+				<building>SW5</building>
+				<room>1850</room>
+				<instructor>
+					<firstname>Jim</firstname>
+					<lastname>Parry</lastname>
+				</instructor>
+			</booking>
+
+			<booking type="Lecture" start="8:30am" end="9:20am" course="COMP4711">
+				<building>SW5</building>
+				<room>1850</room>
+				<instructor>
+					<firstname>Jim</firstname>
+					<lastname>Parry</lastname>
+				</instructor>
+			</booking>
+		</day>
+	</days>
+
+	<!-- timeslots -->
+	<timeslots>
+		<time start="8:30am">
+			<booking type="Lecture" course="COMP4711">
+				<building>SW5</building>
+				<room>1850</room>
+				<instructor>
+					<firstname>Jim</firstname>
+					<lastname>Parry</lastname>
+				</instructor>
+			</booking>
+			<booking type="Lecture" course="COMP4711">
+				<building>SW5</building>
+				<room>1850</room>
+				<instructor>
+					<firstname>Jim</firstname>
+					<lastname>Parry</lastname>
+				</instructor>
+			</booking>
+		</time>
+	</timeslots>
+	
 </schedule>
