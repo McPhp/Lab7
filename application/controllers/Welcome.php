@@ -26,7 +26,7 @@ class Welcome extends Application {
 	public function index()
 	{
 		// $this->load->view('welcome_message');
-		$this->data['pageTitle'] = 'Home';
+		$this->data['pagebody'] = 'welcome';
 		$this->render();
 	}
 }
