@@ -19,7 +19,7 @@
 				$record->booking = array();
 				
 				foreach($course->booking as $booking){
-					
+					array_push($record->booking, new Booking($booking));
 				}
 			}
 		}
@@ -36,6 +36,16 @@
 		protected $instructorFirst = '';
 		protected $instructorLast = '';
 		
+		function __construct($booking){
+			$this->type = (string)$booking->type;
+			$this->start = (string)$booking->start;
+			$this->end = (string)$booking->end;
+			$this->building = $booking->building;
+			$this->room = $booking->room;
+			$this->instructorFirst = $booking->instructor->firstname;
+			$this->instructorLast = $booking->instructor->lastname;
+			
+		}
 		
 	}
 ?>
