@@ -1,5 +1,6 @@
 <!-- schedule constraints -->
-<!ELEMENT schedule (program, year, term, set, courses, days, timeslots)>
+<!ELEMENT schedule (info, courses, days, timeslots)>
+<!ELEMENT info (program, year, term, set)>
 <!ELEMENT program (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
 <!ELEMENT term (#PCDATA)>

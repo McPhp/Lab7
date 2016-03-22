@@ -5,11 +5,24 @@
 		protected $courses = array();
 		protected $days = array();
 		protected $timeslots = array();
+		protected $info = array();
 		
 		//constructor
-		public function __construct(){
+		public function __construct()
+		{
 			parent::__construct();
+			
 			$this->xml = simplexml_load_file('data/schedule.xml');
+			
+			foreach($this->xml->info as $sched)
+			{
+				$record = new stdClass();
+				$record->program = $sched->program;
+				$record->year = $sched->year;
+				$record->term = $sched->term;
+				$record->set = $sched->set;
+				array_push($this->info, $record);
+			}
 			
 			//build list of courses
 			foreach($this->xml->courses->course as $course)
@@ -50,6 +63,11 @@
 				array_push($this->timeslots, $record);
 			}
 			
+		}
+		
+		function getInfo()
+		{
+			return $this->info;
 		}
 		
 		/* Facets */

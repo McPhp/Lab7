@@ -2,11 +2,13 @@
 <!DOCTYPE schedule SYSTEM "schedule.dtd">
 
 <schedule>
-	<program>CST</program>
-	<year>2016</year>
-	<term>4</term>
-	<set>G</set>
-
+	<info>
+		<program>CST</program>
+		<year>2016</year>
+		<term>4</term>
+		<set>G</set>
+	</info>
+	
 	<!-- Courses -->
 	<courses>
 		<course name="COMP" number="4711">

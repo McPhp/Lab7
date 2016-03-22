@@ -1,4 +1,12 @@
 <div class="row">
+
+	{scheduleInfo}
+	<div class="span12">
+	{program}
+	{year}
+	{term}{set}
+	</div>
+	{/scheduleInfo}
 	
 	{courses}
 	<div class = "span12">
@@ -6,10 +14,8 @@
 		{booking}
 		<div class="span12">
 		{type}
-		{start}
-		{end}
-		{room}
-		
+		{start} - {end}
+		{room}		
 		{building}
 		
 		{instructorLast}, {instructorFirst}

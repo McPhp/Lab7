@@ -26,9 +26,12 @@ class Welcome extends Application {
 	public function index()
 	{
 		$this->data['pagebody'] = 'welcome';
+		
+		$this->data['scheduleInfo'] = $this->Timetable->getInfo();
 		$this->data['courses'] = $this->Timetable->getCourses();
 		$this->data['days'] = $this->Timetable->getDays();
 		$this->data['timeslots'] = $this->Timetable->getTimeslots();
+		
 		$this->render();
 	}
 }
