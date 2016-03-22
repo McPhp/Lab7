@@ -22,7 +22,7 @@
 
 
 <!-- courses constraints -->
-<!ELEMENT courses (course)>
+<!ELEMENT courses (course+)>
 <!ELEMENT course (booking+)>
 <!ATTLIST course
 	name (COMP|BLAW) #REQUIRED
@@ -40,8 +40,8 @@
 
 
 <!-- timeslots constraints -->
-<!ELEMENT timeslots (time)>
-<!ELEMENT time (booking+)>
-<!ATTLIST time
+<!ELEMENT timeslots (hour+)>
+<!ELEMENT hour (booking+)>
+<!ATTLIST hour
 	start (8:30am|9:30am|10:30am|11:30am|12:30pm|1:30pm|2:30pm|3:30pm|4:30pm) #REQUIRED
 >

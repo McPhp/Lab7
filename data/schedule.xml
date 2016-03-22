@@ -33,7 +33,7 @@
 
 	<!-- Daysoftheweek -->
 	<days>
-		<day day_of_the_week = "Monday">	
+		<day day_of_the_week = "Monday">
 			<booking type="Lecture" start="8:30am" end="9:20am" course="COMP4711">
 				<building>SW5</building>
 				<room>1850</room>
@@ -56,7 +56,7 @@
 
 	<!-- timeslots -->
 	<timeslots>
-		<time start="8:30am">
+		<hour start="8:30am">
 			<booking type="Lecture" course="COMP4711">
 				<building>SW5</building>
 				<room>1850</room>
@@ -73,7 +73,7 @@
 					<lastname>Parry</lastname>
 				</instructor>
 			</booking>
-		</time>
+		</hour>
 	</timeslots>
 	
 </schedule>
