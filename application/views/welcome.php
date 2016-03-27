@@ -22,6 +22,11 @@
             </div>
         </form>
     </div>
+    <div>
+        <h4>{courseMsg}</h4>
+        <h2>{bingo}</h2>
+        <h6>{match}</h6>
+    </div>
 
 
 <div class="row">
@@ -56,7 +61,7 @@
                 
                 {booking}
                     <tr>
-						<td>{day}</td>
+			<td>{day}</td>
                         <td>{type}</td>
                         <td>{start} - {end}</td>
                         <td>{room}</td>
@@ -112,7 +117,7 @@
                 <thead>
                     <tr>
                         <th>Course</th>
-						<th>Day</th>
+			<th>Day</th>
                         <th>Type</th>
                         <th>Room</th>
                         <th>Building</th>
@@ -125,7 +130,7 @@
                 {booking}
                     <tr>
                         <td>{course}</td>
-						<td>{day}</td>
+			<td>{day}</td>
                         <td>{type}</td>
                         <td>{room}</td>
                         <td>{building}</td>
