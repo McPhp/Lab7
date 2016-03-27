@@ -1,6 +1,6 @@
     <div class="container" >
         <h3>Search
-        <button type="button" data-toggle="collapse" data-target="#demo">-</button></h3>
+        <button id="dropDownBtn" onclick="changeSign()" type="button" data-toggle="collapse" data-target="#demo">-</button></h3>
         <form action="/welcome/search" method="post">
         <div id="demo" class="collapse in">
                 <table class="table">
@@ -43,6 +43,7 @@
             <table class="table table-bordered">
                 <thead>
                     <tr>
+						<th>Day</th>
                         <th>Type</th>
                         <th>Time</th>
                         <th>Room Number</th>
@@ -55,6 +56,7 @@
                 
                 {booking}
                     <tr>
+						<td>{day}</td>
                         <td>{type}</td>
                         <td>{start} - {end}</td>
                         <td>{room}</td>
@@ -110,6 +112,7 @@
                 <thead>
                     <tr>
                         <th>Course</th>
+						<th>Day</th>
                         <th>Type</th>
                         <th>Room</th>
                         <th>Building</th>
@@ -122,6 +125,7 @@
                 {booking}
                     <tr>
                         <td>{course}</td>
+						<td>{day}</td>
                         <td>{type}</td>
                         <td>{room}</td>
                         <td>{building}</td>
@@ -135,3 +139,10 @@
         {/timeslots}	
 </div>
 
+<script>
+function changeSign()
+{
+	var btn = document.getElementById("dropDownBtn");
+	btn.innerHTML = btn.innerHTML == "-" ? "+" : "-";
+}
+</script>

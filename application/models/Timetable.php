@@ -158,6 +158,7 @@
 		public $building = '';
 		public $instructorFirst = '';
 		public $instructorlast = '';
+		public $day = '';
 		
 		function __construct($booking)
 		{
@@ -165,6 +166,7 @@
 			$this->start = (string)$booking['start'];
 			$this->end = (string)$booking['end'];
 			$this->course = (string)$booking['course'];
+			$this->day = (string)$booking['day'];
 			$this->building = $booking->building;
 			$this->room = $booking->room;
 			$this->instructorFirst = $booking->instructor->firstname;
