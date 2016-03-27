@@ -107,6 +107,45 @@
                  "4:30"   => "4:30",
                  "5:30"    => "5:30");
                 }
+                function getDayBooking($day, $time) {
+                $result = array();
+                    foreach($this->days as $weekDay){
+                        if($weekDay->day_of_the_week == $day) {
+                            foreach($weekDay->booking as $booking) {
+                                if ($booking->start == $time) {
+                                    array_push($result, $booking);
+                                }
+                            }
+                        }
+                    }
+                return $result;
+                }
+                
+                function getCourseBooking($day, $time) {
+                    $result = array();
+                    foreach($this->courses as $course) {
+                        foreach ($course->booking as $booking) {
+                            if ($booking->day == $day && $booking->start == $time) {
+                                array_push($result, $booking);
+                            }
+                        }
+                    }
+                    return $result;
+                }
+                
+                function getTimeslotBooking($day, $time) {
+                    $result = array();
+                    foreach($this->timeslots as $timeslot) {
+                        if($timeslot->start) {
+                            foreach ($timeslot->booking as $booking) {
+                                if ($booking->day == $day) {
+                                    array_push($result, $booking);
+                                }
+                            }
+                        }
+                    }
+                return $result;
+                }
 	}
 	
 	class Booking extends CI_Model
