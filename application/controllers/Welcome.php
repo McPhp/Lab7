@@ -38,6 +38,27 @@ class Welcome extends Application {
 	}
         
         public function search() {
+            
+            $this->data['pagebody'] = 'welcome';
+            
+            $this->data['scheduleInfo'] = $this->Timetable->getInfo();
+            $this->data['courses'] = $this->Timetable->getCourses();
+            $this->data['days'] = $this->Timetable->getDays();
+            $this->data['timeslots'] = $this->Timetable->getTimeslots();
+            $this->data['alldays'] = form_dropdown('day',  $this->Timetable->getAllDays());
+            $this->data['alltimes'] = form_dropdown('time', $this->Timetable->getAllTimes());
+            
+            $day = $this->input->post('day');
+            $time = $this->input->post('time');
+            
+            //$days = $this->Timetable->getDayBooking($day, $time);
+            //$courses = $this->Timetable->getCourseBooking($day, $time);
+            //$timeslots = $this->Timetable->getTimeslotBooking($day, $time);
+            
+            
+            
+            
+            
             $this->render();
         }
 }

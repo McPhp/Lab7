@@ -5,17 +5,18 @@
         <div id="demo" class="collapse in">
                 <table class="table">
                     <tr>
-                        <td>Day:</td>
-                        <td>{alldays}</td>
+                        <th>Day:</th>
+                        <th>{alldays}</th>
                     </tr>
                     <tr>
-                        <td>Time:</td>
-                        <td>{alltimes}</td>
+                        <th>Time:</th>
+                        <th>{alltimes}</th>
                     </tr>
                     <tr>
                         <td>
                             <input type="submit" name="submit" value="Search" />
                         </td>
+                        <td></td>
                     </tr>
                 </table>
             </div>

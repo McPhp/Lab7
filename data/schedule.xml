@@ -12,7 +12,7 @@
 	<!-- Courses -->
 	<courses>
 		<course name="COMP" number="4711">
-			<booking type="Lecture" start="8:30am" end="9:20am">
+			<booking type="Lecture" start="8:30am" end="9:20am" day="monday">
 				<building>SW5</building>
 				<room>1850</room>
 				<instructor>
@@ -21,7 +21,7 @@
 				</instructor>
 			</booking>
 			
-			<booking type="Lab" start="12:30pm" end="2:20pm">
+			<booking type="Lab" start="12:30pm" end="2:20pm" day="monday">
 				<building>SE12</building>
 				<room>320</room>
 				<instructor>
@@ -59,7 +59,7 @@
 	<!-- timeslots -->
 	<timeslots>
 		<hour start="8:30am">
-			<booking type="Lecture" course="COMP4711">
+			<booking type="Lecture" course="COMP4711" day="monday">
 				<building>SW5</building>
 				<room>1850</room>
 				<instructor>
@@ -67,7 +67,7 @@
 					<lastname>Parry</lastname>
 				</instructor>
 			</booking>
-			<booking type="Lecture" course="COMP4711">
+			<booking type="Lecture" course="COMP4711" day="monday">
 				<building>SW5</building>
 				<room>1850</room>
 				<instructor>
