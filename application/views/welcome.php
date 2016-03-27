@@ -1,6 +1,6 @@
     <div class="container" >
         <h3>Search
-        <button type="button" data-toggle="collapse" data-target="#demo">^</button></h3>
+        <button type="button" data-toggle="collapse" data-target="#demo">-</button></h3>
         <form action="/welcome/search" method="post">
         <div id="demo" class="collapse in">
                 <table class="table">
