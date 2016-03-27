@@ -31,7 +31,13 @@ class Welcome extends Application {
 		$this->data['courses'] = $this->Timetable->getCourses();
 		$this->data['days'] = $this->Timetable->getDays();
 		$this->data['timeslots'] = $this->Timetable->getTimeslots();
+                $this->data['alldays'] = form_dropdown('day',  $this->Timetable->getAllDays());
+                $this->data['alltimes'] = form_dropdown('time', $this->Timetable->getAllTimes());
 		
 		$this->render();
 	}
+        
+        public function search() {
+            $this->render();
+        }
 }
