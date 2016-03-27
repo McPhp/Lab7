@@ -2,15 +2,17 @@
 <!DOCTYPE schedule SYSTEM "schedule.dtd">
 
 <schedule>
-	<program>CST</program>
-	<year>2016</year>
-	<term>4</term>
-	<set>G</set>
-
+	<info>
+		<program>CST</program>
+		<year>2016</year>
+		<term>4</term>
+		<set>G</set>
+	</info>
+	
 	<!-- Courses -->
 	<courses>
 		<course name="COMP" number="4711">
-			<booking type="Lecture" start="8:30am" end="9:20am">
+			<booking type="Lecture" start="8:30am" end="9:20am" day="Monday">
 				<building>SW5</building>
 				<room>1850</room>
 				<instructor>
@@ -19,7 +21,7 @@
 				</instructor>
 			</booking>
 			
-			<booking type="Lab" start="12:30pm" end="2:20pm">
+			<booking type="Lab" start="12:30pm" end="2:20pm" day="Tuesday">
 				<building>SE12</building>
 				<room>320</room>
 				<instructor>
@@ -28,11 +30,12 @@
 				</instructor>
 			</booking>
 		</course>
+		
 	</courses>
 
 	<!-- Daysoftheweek -->
 	<days>
-		<day day_of_the_week = "Monday">	
+		<day day_of_the_week = "Monday">
 			<booking type="Lecture" start="8:30am" end="9:20am" course="COMP4711">
 				<building>SW5</building>
 				<room>1850</room>
@@ -42,12 +45,12 @@
 				</instructor>
 			</booking>
 
-			<booking type="Lecture" start="8:30am" end="9:20am" course="COMP4711">
+			<booking type="Lecture" start="4:30pm" end="5:20pm" course="COMP4711">
 				<building>SW5</building>
-				<room>1850</room>
+				<room>1851</room>
 				<instructor>
-					<firstname>Jim</firstname>
-					<lastname>Parry</lastname>
+					<firstname>Bernie</firstname>
+					<lastname>Sanders</lastname>
 				</instructor>
 			</booking>
 		</day>
@@ -55,8 +58,8 @@
 
 	<!-- timeslots -->
 	<timeslots>
-		<time start="8:30am">
-			<booking type="Lecture" course="COMP4711">
+		<hour start="8:30am">
+			<booking type="Lecture" course="COMP4711" day="Monday">
 				<building>SW5</building>
 				<room>1850</room>
 				<instructor>
@@ -64,15 +67,15 @@
 					<lastname>Parry</lastname>
 				</instructor>
 			</booking>
-			<booking type="Lecture" course="COMP4711">
+			<booking type="Lecture" course="COMP4711" day="Tuesday">
 				<building>SW5</building>
-				<room>1850</room>
+				<room>1851</room>
 				<instructor>
-					<firstname>Jim</firstname>
-					<lastname>Parry</lastname>
+					<firstname>Paul</firstname>
+					<lastname>John</lastname>
 				</instructor>
 			</booking>
-		</time>
+		</hour>
 	</timeslots>
 	
 </schedule>
