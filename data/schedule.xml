@@ -21,7 +21,7 @@
 				</instructor>
 			</booking>
 			
-			<booking type="Lab" start="12:30pm" end="2:20pm" day="Monday">
+			<booking type="Lab" start="12:30pm" end="2:20pm" day="Tuesday">
 				<building>SE12</building>
 				<room>320</room>
 				<instructor>
@@ -45,12 +45,12 @@
 				</instructor>
 			</booking>
 
-			<booking type="Lecture" start="8:30am" end="9:20am" course="COMP4711">
+			<booking type="Lecture" start="4:30pm" end="5:20pm" course="COMP4711">
 				<building>SW5</building>
-				<room>1850</room>
+				<room>1851</room>
 				<instructor>
-					<firstname>Jim</firstname>
-					<lastname>Parry</lastname>
+					<firstname>Bernie</firstname>
+					<lastname>Sanders</lastname>
 				</instructor>
 			</booking>
 		</day>
@@ -67,12 +67,12 @@
 					<lastname>Parry</lastname>
 				</instructor>
 			</booking>
-			<booking type="Lecture" course="COMP4711" day="Monday">
+			<booking type="Lecture" course="COMP4711" day="Tuesday">
 				<building>SW5</building>
-				<room>1850</room>
+				<room>1851</room>
 				<instructor>
-					<firstname>Jim</firstname>
-					<lastname>Parry</lastname>
+					<firstname>Paul</firstname>
+					<lastname>John</lastname>
 				</instructor>
 			</booking>
 		</hour>
